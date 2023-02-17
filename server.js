@@ -76,9 +76,9 @@ app.get('/info', (req, res) => {
 		process_id: process.pid,
 		carpeta_del_proyecto: process.cwd(),
 		numero_de_procesadores: numCPUs,
-		puerto: puerto
-})
-})
+		puerto: puerto,
+	});
+});
 
 app.get('/api/productos-test', getFakerProducts);
 

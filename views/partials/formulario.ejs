@@ -1,0 +1,80 @@
+<h1 class="text-center my-4"><u>Ingrese un producto.</u></h1>
+<br>
+<div class="row align-items-center flex-column">
+    <form class="w-50 border border-dark rounded p-3 mb-5 bg-success shadow"
+        onsubmit="return addProduct()">
+        <div class="form-group">
+            <label for="nombre"><b>Nombre</b></label>
+            <input id="nombre"
+                class="form-control"
+                type="text"
+                name="nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="precio"><b>Precio</b></label>
+            <input id="precio"
+                class="form-control"
+                type="text"
+                name="precio">
+        </div>
+
+        <div class="form-group">
+            <label for="imagen"><b>Imagen</b></label>
+            <input id="imagen"
+                class="form-control"
+                type="text"
+                name="imagen">
+        </div>
+
+        <input type="submit"
+            id="btnProd"
+            value="Ingresar"
+            class="m-1 btn btn-dark"><br>
+    </form>
+    <div class="d-flex">
+        <form class="w-50 border border-dark rounded p-3 m-3 text-center bg-danger shadow"
+            onsubmit="return deleteProduct()">
+            <div class="form-group">
+                <label for="id"><b>Eliminar producto ID:</b></label>
+                <input id="idDelete"
+                    class="form-control"
+                    type="text"
+                    name="id">
+            </div>
+            <input type="submit"
+                id="btnDelete"
+                value="Eliminar"
+                class="m-1"><br>
+        </form>
+        <form class="w-50 border border-dark rounded p-3 m-3 text-center bg-warning shadow"
+            onsubmit="return UpdateProduct()">
+            <div class="form-group">
+                <label for="id"><b>Actualizar producto ID:</b></label>
+                <input id="idUpdate"
+                    class="form-control"
+                    type="text"
+                    name="idUpdt">
+            </div>
+            <input type="submit"
+                id="btnUpdate"
+                value="Actualizar"
+                class="m-1"><br>
+        </form>
+        <form class="w-50 border border-dark rounded p-3 m-3 text-center bg-secondary shadow"
+            onsubmit="return getProductById()">
+            <div class="form-group">
+                <label for="idGetById"><b>Seleccionar producto ID:</b></label>
+                <input id="idGetById"
+                    class="form-control"
+                    type="text"
+                    name="getById">
+            </div>
+            <input type="submit"
+                id="btngetById"
+                value="Seleccionar"
+                class="m-1"><br>
+        </form>
+    </div>
+</div>
+<script src="./js/index.js"></script>

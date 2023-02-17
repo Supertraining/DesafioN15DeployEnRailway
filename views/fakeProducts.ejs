@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi plantilla de Ingreso de Datos en EJS</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    </head>
+    <body class="container">
+        <div class="table-responsive border border-dark rounded text-center my-3">
+            <h2>Faker Products</h2>
+            <table class="table table-primary my-2">
+                <tr style="color: black; background-color: blanchedalmond;">
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                </tr>
+                <tbody id="tabla-fake">
+                    <% fproducts.forEach(function(fproduct){ %>
+                        <tr>
+                            <td><%=fproduct.nombre %></td>
+                            <td><%=fproduct.precio %></td>
+                            <td><img src=<%=fproduct.foto %></td>
+                            </tr>
+                    <% });%>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

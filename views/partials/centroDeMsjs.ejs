@@ -1,0 +1,55 @@
+<div class="row border border-dark rounded shadow bg-primary">
+    <div class="bg-light w-100 text-primary rounded" id="compresion"></div>
+    <form class="bg-dark rounded d-flex w-100 form-group"
+        onsubmit="return addMessage()">
+        <div class="p-3 my-3 w-50 text-center d-flex flex-column align-items-center">
+            <input class="w-50 form-control"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ingrese su e-mail"><br>
+            <input class="w-50 form-control"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nombre"><br>
+            <input class="w-50 form-control"
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Apellido"><br>
+            <input class="w-50 form-control"
+                type="number"
+                name="edad"
+                id="edad"
+                placeholder="Edad"><br>
+            <input class="w-50 form-control"
+                type="text"
+                name="alias"
+                id="alias"
+                placeholder="Alias"><br>
+            <input class="w-50 form-control"
+                type="text"
+                name="avatar"
+                id="avatar"
+                placeholder="Avatar"><br>
+            <textarea class="w-50 form-control"
+                rows="5"
+                maxlength="200"
+                id="text"
+                placeholder="Tu mensaje..."></textarea><br>
+            <input type="submit"
+                value="Enviar Msj"
+                class="btn btn-primary w-50"
+                id="btnMssg">
+        </div>
+
+        <form />
+        <div class="w-50 overflow-auto m-5 p-3 rounded bg-light"
+        id="messages"
+        style="height: 500px;">
+        </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.2/dist/normalizr.browser.min.js"></script> 
+<script src="./js/index.js"></script>

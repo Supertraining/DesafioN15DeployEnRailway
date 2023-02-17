@@ -2,6 +2,7 @@ import knex from 'knex';
 import { faker } from '@faker-js/faker';
 faker.locale = 'es';
 
+
 class ClienteSQL {
 	constructor(options, tabla) {
 		this.knex = knex(options);

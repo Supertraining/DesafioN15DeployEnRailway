@@ -47,7 +47,7 @@ const advancedOptions = { useNewUrlParser: true, useUnifiedTopology: true };
 app.use(
 	session({
 		store: mongoStore.create({
-			mongoUrl: process.env.MONGODBURL,
+			mongoUrl: process.env.MONGO_URL,
 			mongoOptions: advancedOptions,
 			collectionName: 'sessions',
 			ttl: 600,

@@ -5,9 +5,9 @@ const options = {
 	client: 'mysql',
 	connection: {
 		host: process.env.MYSQLHOST || '127.0.0.1',
-		user: process.env.SQLUSERNAME,
+		user: 'root',
 		password: '',
-		database: process.env.SQLDATABASE,
+		database: 'ecommerce'
 	},
 };
 

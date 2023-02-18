@@ -4,10 +4,10 @@ dotenv.config();
 const options = {
 	client: 'mysql',
 	connection: {
-		host: process.env.MYSQLHOST,
-		user: 'root',
-		password: '',
-		database: 'ecommerce'
+		host: process.env.MYSQLHOST || '0.0.0.0',
+		user: process.env.MYSQLUSER || 'root',
+		password: process.env.MYSQLPASSWORD || '',
+		database: process.env.MYSQLDATABASE || 'ecommerce'
 	},
 };
 

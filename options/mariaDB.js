@@ -7,7 +7,8 @@ const options = {
 		host: process.env.SQLHOST || 'localhost',
 		user: process.env.SQLUSER || 'root',
 		password: process.env.SQLPASSWORD || '',
-		database: process.env.SQLDATABASE || 'ecommerce'
+		database: process.env.SQLDATABASE || 'ecommerce',
+		port: process.env.SQLPORT
 	},
 };
 

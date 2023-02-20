@@ -42,5 +42,5 @@ export const selectProduct = async (id) => {
 export const getFakerProducts = async (req, res) => {
 	let fproducts = await productContainer
 		.fakerProducts()
-		res.render('fakeproducts', { fproducts: fproducts });
+		res.render('../fakeproducts', { fproducts: fproducts });
 }

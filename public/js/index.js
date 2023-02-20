@@ -4,7 +4,7 @@ function addProduct() {
 	const producto = {
 		nombre: document.getElementById('nombre').value,
 		precio: document.getElementById('precio').value,
-		foto: document.getElementById('imagen').value,
+		imagen: document.getElementById('imagen').value,
 	};
 	socket.emit('new-product', producto);
 }

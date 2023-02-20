@@ -18,7 +18,7 @@ function UpdateProduct() {
 		id: document.getElementById('idUpdate').value,
 		nombre: document.getElementById('nombre').value,
 		precio: document.getElementById('precio').value,
-		foto: document.getElementById('imagen').value,
+		imagen: document.getElementById('imagen').value,
 	};
 	socket.emit('updatedProduct', updatedProduct);
 }
@@ -40,7 +40,7 @@ socket.on('productos', (data) => {
 				return `    <tr>
                             <td>${el.nombre}</td>
                             <td>${el.precio}</td>
-                            <td><img src=${el.foto}></td>
+                            <td><img src=${el.imagen}></td>
                             <td>${el.id}</td>
                             </tr><br>
                         `;
@@ -63,7 +63,7 @@ socket.on('selectedProd', (data) => {
 				return `    <tr>
                             <td>${el.nombre}</td>
                             <td>${el.precio}</td>
-                            <td><img src=${el.foto}></td>
+                            <td><img src=${el.imagen}></td>
                             <td>${el.id}</td>
                             </tr><br>
                         `;

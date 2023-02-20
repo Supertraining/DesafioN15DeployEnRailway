@@ -66,7 +66,7 @@ class ClienteSQL {
 		try {
 			await this.knex(`${this.tabla}`)
 				.where('id', '=', obj.id)
-				.update({ nombre: obj.nombre, precio: obj.precio, foto: obj.foto });
+				.update({ nombre: obj.nombre, precio: obj.precio, imagen: obj.imagen });
 		} catch (err) {
 			throw new Error('ocurrio un error' + err);
 		}

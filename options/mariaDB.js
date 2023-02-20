@@ -2,7 +2,7 @@ import dotenv from 'dotenv'
 dotenv.config();
 
 const options = {
-	client: 'mysql',
+	client: 'mysql2',
 	connection: {
 		host: process.env.SQLHOST || 'localhost',
 		user: process.env.SQLUSER || 'root',
